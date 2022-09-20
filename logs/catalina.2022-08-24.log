@@ -1,0 +1,234 @@
+24-Aug-2022 21:55:01.795 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.14
+24-Aug-2022 21:55:01.795 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 6 2018 21:13:53 UTC
+24-Aug-2022 21:55:01.795 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.14.0
+24-Aug-2022 21:55:01.795 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\java\jdk1.8.0_231\jre
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_231-b11
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Tools\apache-tomcat-9.0.14\conf\logging.properties
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Tools\apache-tomcat-9.0.14\temp
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+24-Aug-2022 21:55:01.801 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Aug-2022 21:55:01.833 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+24-Aug-2022 21:55:02.064 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Aug-2022 21:55:02.996 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Aug-2022 21:55:02.996 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,857] milliseconds
+24-Aug-2022 21:55:03.075 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Aug-2022 21:55:03.075 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.14]
+24-Aug-2022 21:55:03.097 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Tools\apache-tomcat-9.0.14\webapps\dup-send-2.19.1.war]
+24-Aug-2022 21:55:10.347 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Error during ServletContainerInitializer processing
+ javax.servlet.ServletException: Not running on Jetty, JSR-356 support unavailable
+	at org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer.onStartup(WebSocketServerContainerInitializer.java:271)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5120)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:978)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:773)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:427)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1577)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:934)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:933)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:637)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+24-Aug-2022 21:55:10.357 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/dup-send-2.19.1] startup failed due to previous errors
+24-Aug-2022 21:55:10.459 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Tools\apache-tomcat-9.0.14\webapps\dup-send-2.19.1.war] has finished in [7,362] ms
+24-Aug-2022 21:55:10.469 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Aug-2022 21:55:10.489 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+24-Aug-2022 21:55:10.499 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [7,488] milliseconds
+24-Aug-2022 21:56:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.14
+24-Aug-2022 21:56:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 6 2018 21:13:53 UTC
+24-Aug-2022 21:56:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.14.0
+24-Aug-2022 21:56:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Aug-2022 21:56:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\java\jdk1.8.0_231\jre
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_231-b11
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Tools\apache-tomcat-9.0.14\conf\logging.properties
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Tools\apache-tomcat-9.0.14\temp
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+24-Aug-2022 21:56:56.536 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Aug-2022 21:56:56.558 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+24-Aug-2022 21:56:56.775 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Aug-2022 21:56:57.614 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Aug-2022 21:56:57.624 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,654] milliseconds
+24-Aug-2022 21:56:57.695 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Aug-2022 21:56:57.695 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.14]
+24-Aug-2022 21:56:57.736 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Tools\apache-tomcat-9.0.14\webapps\dup-send-2.19.1.war]
+24-Aug-2022 21:57:04.919 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Error during ServletContainerInitializer processing
+ javax.servlet.ServletException: Not running on Jetty, JSR-356 support unavailable
+	at org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer.onStartup(WebSocketServerContainerInitializer.java:271)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5120)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:978)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:773)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:427)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1577)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:934)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:933)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:637)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+24-Aug-2022 21:57:04.929 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/dup-send-2.19.1] startup failed due to previous errors
+24-Aug-2022 21:57:04.990 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Tools\apache-tomcat-9.0.14\webapps\dup-send-2.19.1.war] has finished in [7,252] ms
+24-Aug-2022 21:57:04.998 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Aug-2022 21:57:05.018 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+24-Aug-2022 21:57:05.020 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [7,399] milliseconds
+24-Aug-2022 21:58:07.542 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.14
+24-Aug-2022 21:58:07.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 6 2018 21:13:53 UTC
+24-Aug-2022 21:58:07.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.14.0
+24-Aug-2022 21:58:07.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Aug-2022 21:58:07.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Aug-2022 21:58:07.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Aug-2022 21:58:07.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\java\jdk1.8.0_231\jre
+24-Aug-2022 21:58:07.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_231-b11
+24-Aug-2022 21:58:07.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Aug-2022 21:58:07.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:58:07.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:58:07.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Tools\apache-tomcat-9.0.14\conf\logging.properties
+24-Aug-2022 21:58:07.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Aug-2022 21:58:07.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Aug-2022 21:58:07.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Aug-2022 21:58:07.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Aug-2022 21:58:07.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:58:07.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Tools\apache-tomcat-9.0.14
+24-Aug-2022 21:58:07.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Tools\apache-tomcat-9.0.14\temp
+24-Aug-2022 21:58:07.611 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+24-Aug-2022 21:58:07.613 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+24-Aug-2022 21:58:07.613 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Aug-2022 21:58:07.623 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+24-Aug-2022 21:58:07.901 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Aug-2022 21:58:08.725 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Aug-2022 21:58:08.741 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,889] milliseconds
+24-Aug-2022 21:58:08.803 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Aug-2022 21:58:08.803 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.14]
+24-Aug-2022 21:58:08.841 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Tools\apache-tomcat-9.0.14\webapps\dup-send-2.19.1.war]
+24-Aug-2022 21:58:15.023 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Error during ServletContainerInitializer processing
+ javax.servlet.ServletException: Not running on Jetty, JSR-356 support unavailable
+	at org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer.onStartup(WebSocketServerContainerInitializer.java:271)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5120)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:978)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:773)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:427)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1577)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:934)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:933)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:637)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+24-Aug-2022 21:58:15.033 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/dup-send-2.19.1] startup failed due to previous errors
+24-Aug-2022 21:58:15.094 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Tools\apache-tomcat-9.0.14\webapps\dup-send-2.19.1.war] has finished in [6,253] ms
+24-Aug-2022 21:58:15.104 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Aug-2022 21:58:15.124 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+24-Aug-2022 21:58:15.133 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [6,384] milliseconds

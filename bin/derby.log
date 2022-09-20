@@ -1,0 +1,18 @@
+----------------------------------------------------------------
+Tue Apr 12 21:16:00 IRDT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0180-1eaa-ef58-00000e2ec250 
+on database directory C:\Tools\apache-tomcat-9.0.14\bin\jackrabbit\version\db with class loader ParallelWebappClassLoader
+  context: jackrabbit
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@709ba3fb
+ 
+Loaded from file:/C:/Users/sadra/Desktop/jackrabbit-webapp-2.20.0/WEB-INF/lib/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_231-b11
+user.dir=C:\Tools\apache-tomcat-9.0.14\bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
